@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>30-layoutsymantic</title>
+    <link href="../Styles/LayoutSymantic.css" rel="stylesheet" />
+    <style>
+        /* Use a media query to add a break point at 800px: */
+        @media screen and (max-width: 800px) {
+            #section, #aside {
+                width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+            }
+
+            #aside {
+                height: 500px;
+            }
+
+            #section {
+                height: 900px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header id="header" style="font-size:10vw;">Header</header>
+        <nav id="nav">menu</nav>
+        <aside id="aside">sidebar</aside>
+        <section id="section">content</section>
+        <footer id="footer">footer</footer>
+        <details open>
+            <summary>Powered By La20</summary>
+            <p>
+                W3Schools is optimized for learning and training. Examples might be simplified to improve reading and learning.
+                Tutorials, references, and examples are constantly reviewed to avoid errors,
+                but we cannot warrant full correctness of all content.
+                While using W3Schools, you agree to have read and accepted our terms of use, cookie and privacy policy.
+                Copyright 1999-2021 by Refsnes Data. All Rights Reserved.
+                W3Schools is Powered by W3.CSS.
+            </p>
+        </details>
+        
+    </div>
+</body>
+</html>

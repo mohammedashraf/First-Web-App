@@ -1,0 +1,23 @@
+﻿p {
+    background-color: yellowgreen;
+    color: blue;
+}
+
+#cuspar {
+    background-color: azure;
+    color: blueviolet;
+}
+
+
+h3.cuStyle {
+    color: green;
+    background-color: yellow;
+}
+
+body {
+    background-color: powderblue;
+}
+.cuStyle {
+    background-color: lemonchiffon;
+    color: crimson;
+}

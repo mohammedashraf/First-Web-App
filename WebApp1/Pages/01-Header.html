@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>First Page</title>
+</head>
+<body>
+
+    <b>Bold Text</b><br />
+    <i>Italic Text</i><br />
+    <strong>Strong Text</strong><br />
+    <small>Small Text</small><br />
+    <b><i>Bold Italic Text</i></b><br />
+    <em>emparesd Text</em><br />
+    <mark>marked Text</mark><br />
+    <ins>Inserted Text</ins><br />
+    <del>Deleted Text</del><br />
+    <p>H2O H<sub>2</sub>O</p>
+    <p>(3)2 (3)<sup>2</sup></p>
+    <p id="demo5"></p>
+    <script>
+        let text = "Hello";
+        const myArr = text.split("");
+
+        text = "";
+        for (let i = 0; i < myArr.length; i++) {
+            text += myArr[i] + "<br>";
+        }
+        document.getElementById("demo5").innerHTML = text;
+    </script>
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>WebForm</title>
+    <style>
+        body{
+            background-color:#fa4c8c;
+            color:#3b1cbb;
+        }
+        div{
+            margin:40px;
+        }
+        #subm{
+    
+            padding:10px;
+            color:#5e5dc1;
+        }
+        th{
+            text-align:left;
+        }
+    </style>
+    <style>
+        fieldset{
+            border:1px solid #3b1cbb;
+            border-radius:10px;
+            background-color:darkcyan;
+        }
+        legend{
+            color:chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <form>
+  
+        <table>
+        <tr>
+            <th><label for="Username">Username</label></th>
+            <td><input type="text" name="user" id="Username"/></td>
+        </tr>
+        <tr>
+            <th><label for="Password">Password</label></th>
+            <td><input type="password" name="pass" id="Password" /></td>
+        </tr>
+        <tr>
+            <th>Gender</th>
+            <td><input type="radio" name="gender" value="gender checked" />Male.<br /></td>
+            <td><input type="radio" name="gender" value="female" />female.</td>
+        </tr>
+        <tr>
+            <th>favourit PL</th>
+            <td>
+                <input type="checkbox" name="fpl" value="C#" />C#<br />
+                <input type="checkbox" name="fpl" value="Java" />Java<br />
+                <input type="checkbox" name="fpl" value="Python" />Python<br />
+                <input type="checkbox" name="fpl" value="VB.Net" />VB.Net<br />
+            </td>
+        </tr>
+
+
+        <tr>
+            <th>City</th>
+            <td>
+                <select name="City" size="3" multiple>
+                    <option value="Cairo" selected>Cairo</option>
+                    <option value="Alex">Alex</option>
+                    <option value="Giza">Giza</option>
+                    <option value="Tanta">Tanta</option>
+                    <option value="Mansoura">Mansoura</option>
+                    <option value="Souhag">Souhag</option>
+                    <option value="Aswan">Aswan</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <th>Favourite Browser:</th>
+            <td>
+                <input list="browsers" name="fBrowsers" />
+                <datalist id="browsers">
+                    <option value="Opera"></option>
+                    <option value="FireFox"></option>
+                    <option value="Chrome"></option>
+                    <option value="Edge"></option>
+                </datalist>
+            </td>
+        </tr>
+
+        <tr>
+            <th>Notes</th>
+            <td>
+                <textarea name="notes"></textarea>
+            </td>
+        </tr>
+
+        <tr>
+            <th>Test</th>
+            <td>
+                <!--<input type="number" name="myNum" min="16" max="80" step="2" value="18" />
+                <input type="range" name="myrange" min="5" max="25" step="5" value="10"/>-->
+            <!--<input type="email" name="myemail" />-->
+                <!--<input type="url" name="myurl" />-->
+                <!--<input type="color" name="mycol" />-->
+                <!--<input type="file" name="myfile" />-->
+                <!--<input type="time" name="myTime" />-->
+            <!--<input type="date" name="myDate" />-->
+                <!--<input type="month" name="myMonth" />-->
+                <input type="datetime-local" name="mydatetime" />
+            </td>
+        </tr>
+
+        <tr>
+            <th></th>
+            <td>
+        <!--<input type="submit" value="Submit" id="subm" />
+        <input type="reset" />
+        <input type="button" value="OK" />-->
+        <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+        <!--<button type="button">Ok</button>-->
+        </td>
+            </tr>
+
+        </table>
+
+    </form>
+    </div>
+    <!--<div>
+        <form>
+            <fieldset>
+                <legend>Login Information</legend>
+                <table>
+                    <tr>
+                        <th><label for="Username">Username</label></th>
+                        <td><input type="text" name="user" id="Username" /></td>
+                    </tr>
+                    <tr>
+                        <th><label for="Password">Password</label></th>
+                        <td><input type="password" name="pass" id="Password" /></td>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <td><input type="submit" value="Login" /></td>
+                    </tr>
+                </table>
+            </fieldset>
+
+
+        </form>
+    </div>-->
+</body>
+</html>

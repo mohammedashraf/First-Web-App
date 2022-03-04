@@ -1,0 +1,196 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E0E8A80A-5E5C-4329-BE7C-A7B09881A655}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebApp1</RootNamespace>
+    <AssemblyName>WebApp1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44342</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\ashraf.jpg" />
+    <Content Include="Images\balboff.gif" />
+    <Content Include="Images\balbon.gif" />
+    <Content Include="Images\cover.jpg" />
+    <Content Include="Images\Google.png" />
+    <Content Include="Images\Hand1.jpeg" />
+    <Content Include="Images\Hand2.jpeg" />
+    <Content Include="Images\Hand3.jpeg" />
+    <Content Include="Images\Hand4.jpeg" />
+    <Content Include="Images\Hand5.jpeg" />
+    <Content Include="Images\Hand6.jpeg" />
+    <Content Include="Images\Hand7.jpeg" />
+    <Content Include="Images\Hand8.jpeg" />
+    <Content Include="Images\Hand9.jpeg" />
+    <Content Include="Images\HandMaker.jpg" />
+    <Content Include="Images\HandMaker2.jpg" />
+    <Content Include="Images\workplace.jpg" />
+    <Content Include="Pages\03-ComputerCode.html" />
+    <Content Include="Pages\04-quotations.html" />
+    <Content Include="Pages\01-Header.html" />
+    <Content Include="Pages\05-Images.html" />
+    <Content Include="Pages\06-links.html" />
+    <Content Include="Pages\07-Lists.html" />
+    <Content Include="Pages\08-Tables.html" />
+    <Content Include="Pages\09-Levels.html" />
+    <Content Include="Pages\10-Css.html" />
+    <Content Include="Pages\11-css.html" />
+    <Content Include="Pages\12-cssText.html" />
+    <Content Include="Pages\13-CssFonts.html" />
+    <Content Include="Pages\14-CSSGOOGLE.html" />
+    <Content Include="Pages\15-CSSDisplay.html" />
+    <Content Include="Pages\16-CSSIcons.html" />
+    <Content Include="Pages\17-CSSLists.html" />
+    <Content Include="Pages\18-CSSTables.html" />
+    <Content Include="Pages\19-CSSPosition.html" />
+    <Content Include="Pages\20-Zposition.html" />
+    <Content Include="Pages\21-Overflow.html" />
+    <Content Include="Pages\22-CssFloat.html" />
+    <Content Include="Pages\23-CssClear.html" />
+    <Content Include="Pages\24-CSSNavExample.html" />
+    <Content Include="Pages\25-NavigationLink.html" />
+    <Content Include="Pages\26-CssCombinators.html" />
+    <Content Include="Pages\27-Pesudocodeclasses.html" />
+    <Content Include="Pages\28-NavigationBar.html" />
+    <Content Include="Pages\29-LayoutDiv.html" />
+    <Content Include="Pages\30-layoutSymantic.html" />
+    <Content Include="Pages\31-HoverTab.html" />
+    <Content Include="Pages\32-Searchmenu.html" />
+    <Content Include="Pages\33-SplitButtons.html" />
+    <Content Include="Pages\34-WebForm.html" />
+    <Content Include="Pages\35-FirstWe.html" />
+    <Content Include="Pages\36-FlipCard.html" />
+    <Content Include="Pages\37-ToDoList.html" />
+    <Content Include="Pages\38-Graphics.html" />
+    <Content Include="Pages\39-JavaScript.html" />
+    <Content Include="Pages\40-HandMadeWebsite.html" />
+    <Content Include="Pages\41-JavaScrip.html" />
+    <Content Include="Pages\42-JavaScript.html" />
+    <Content Include="Pages\43-CalculatorTemplate.html" />
+    <Content Include="Pages\44-javascript.html" />
+    <Content Include="Pages\45-BootStrap.html" />
+    <Content Include="Pages\45-Java-Script.html" />
+    <Content Include="Styles\bootstrap.min.css" />
+    <Content Include="Styles\CSSFonts.css" />
+    <Content Include="Styles\FlipCard.css" />
+    <Content Include="Styles\HoverTab.css" />
+    <Content Include="Styles\LayoutDivStyle.css" />
+    <Content Include="Styles\LayoutSymantic.css" />
+    <Content Include="Styles\Searchmenu.css" />
+    <Content Include="Styles\Site1.css" />
+    <Content Include="Styles\SplitButtons.css" />
+    <Content Include="Styles\StyleSheet1.css" />
+    <Content Include="Styles\ToDoList.css" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52199</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44342/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

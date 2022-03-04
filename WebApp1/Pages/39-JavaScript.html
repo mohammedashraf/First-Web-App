@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>39-JavaScript</title>
+    <script>
+        function hello() {
+            document.getElementById('par1').innerHTML = 'Hello World!';
+        }
+        function welcome() {
+            document.getElementById('par1').innerHTML='Welcome To JavaScript'
+        }
+        function onoff() {
+            var img = document.getElementById("myImg");
+            
+            if (img.src.match("balboff")) {
+                img.src = "../Images/balbon.gif";
+            }
+            else {
+            img.src = "../Images/balboff.gif";
+               }
+        }
+        function changecolor() {
+            document.getElementById("head3").style.color = "Red";
+        }
+        function changebcolor() {
+            var h = document.getElementById("head3").style;
+            h.color = "Black";
+            h.backgroundColor = "Yellowgreen";
+            h.fontSize = "20px";
+            h.display ="inline";
+        }
+        function hide() {
+            document.getElementById("head3").style.display = "none";
+        }
+    </script>
+</head>
+<body>
+    <h2>What Can JavaScript Do?</h2>
+    <p id="par1">JavaScript Can Change This Text</p>
+
+    <button type="button" onclick="document.getElementById('par1').innerHTML = 'Welcome To JavaScript!';"
+            ondblclick="document.getElementById('par1').innerHTML = 'Hello world';">
+        Change Text
+    </button>
+
+    <button type="button" onmouseout="hello()" onmouseover="welcome()">Change Text</button>
+  
+    <br />
+    <hr />
+    <br />
+  
+    <div>
+        <img id="myImg" src="../Images/balboff.gif" />
+        <br /><br />
+        <button type="button" onclick="onoff()">on/ Off</button>
+    </div>
+
+    <br />
+    <hr />
+    <br />
+
+    <h3 id="head3" onmouseover="hide()">Welcome To JavaScript</h3>
+    <button onclick="changebcolor()">Go</button>
+   
+
+</body>
+</html>

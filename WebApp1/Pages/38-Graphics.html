@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>38-Graphics</title>
+</head>
+<body>
+    <canvas style="border:1px solid red;">    </canvas>
+    <svg style="border:1px solid orange;">    </svg>
+    <br />
+    <hr />
+    <br />
+    <br />
+    <svg width="300" height="300" style="border:1px dotted black;">
+        <rect x="60" y="100" width="160" height="80" fill="orange" fill-opacity="0.5"
+              stroke="brown" stroke-width="5"></rect>
+        <rect x="60" y="200" style="width:160px;height:80px;fill:green;fill-opacity:0.5;stroke:brown;stroke-width:8px;" />
+
+    </svg>
+    <svg width="300" height="300" style="border:1px dotted blue;">
+        <rect x="50" y="50" rx="20" ry="80" width="150" height="150" fill="brown" opacity="0.8"></rect>
+        <text x="80" y="130" fill="gray" font-size="20">Hello World</text>
+    </svg>
+    <svg width="300" height="300" style="border:1px dotted green;">
+        <circle cx="150" cy="150" r="75" fill="yellowgreen" fill-opacity="0.7" stroke="skyblue" stroke-width="6">
+
+        </circle>
+    </svg>
+    <br />
+    <hr />
+    <br />
+    <svg width="300" height="300">
+        <polygon points="100,10 40,198 190,78 10,78 160,198"
+                 style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;" />
+
+    </svg>
+    <br />
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+    </canvas>
+    <canvas id="myCanvas2" width="200" height="200" style="border:1px solid #000000;">
+    </canvas>
+    <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.moveTo(0, 0);
+        ctx.lineTo(200, 100);
+        ctx.stroke();
+    </script>
+    <script>
+        var c = document.getElementById("myCanvas2");
+        var ctx = c.getContext("2d");
+        ctx.beginPath();
+        ctx.arc(100, 100, 70, 0, 2*Math.PI);
+        ctx.stroke();
+    </script>
+</body>
+</html>

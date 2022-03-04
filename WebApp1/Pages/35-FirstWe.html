@@ -1,0 +1,172 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>35-FirstWeb</title>
+    <link href="../Styles/FlipCard.css" rel="stylesheet" />
+    <link href="../Styles/Searchmenu.css" rel="stylesheet" />
+    <style>
+        body {
+            margin: 0;
+            /* The image used */
+            background-image: url("../Images/cover.jpg");
+            /* Full height */
+            height: 100%;
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+
+
+
+
+        .vercticle ul {
+            list-style-type: none;
+            margin-top: 25px;
+            padding: 0;
+            width: 25%;
+            background-color: #f1f1f1;
+            position: fixed;
+            height: 100%;
+            overflow: auto;
+            text-decoration: none;
+        }
+
+        .vercticle li a {
+            display: block;
+            list-style-type: none;
+            color: #000;
+            padding: 8px 16px;
+            margin-top: 25px;
+            text-decoration: none;
+            width: 25%;
+        }
+
+            .vercticle li a.active {
+                background-color: #04AA6D;
+                color: white;
+                
+            }
+
+            .vercticle li a:hover:not(.active) {
+                background-color: #555;
+                color: white;
+                
+            }
+
+        .horizontal ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            position: -webkit-sticky; /* Safari */
+            position: sticky;
+            top: 0;
+            text-decoration: none;   
+        }
+        .horizontal li {
+            float: left;
+            list-style-type: none;
+            
+        }
+            .horizontal li a {
+                display: block;
+                list-style-type: none;
+                color: white;
+                width: 25%;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                top: 0;
+            }
+
+                .horizontal li a:hover {
+                    background-color: #111;
+                    
+                }
+
+        .active {
+            background-color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+
+    <ul class="horizontal">
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+    </ul>
+    <ul class="vercticle">
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+    </ul>
+    <div class="flip-card" style="margin-left: 25%;">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src="../Images/ashraf.jpg" alt="Avatar" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+                <h1>Mohamed Ashraf</h1>
+                <p>Architect & Engineer</p>
+                <p>We love that guy</p>
+            </div>
+        </div>
+    </div>
+    <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+
+    <ul id="myMenu">
+        <li><a href="#">HTML</a></li>
+        <li><a href="#">CSS</a></li>
+        <li><a href="#">JavaScript</a></li>
+        <li><a href="#">PHP</a></li>
+        <li><a href="#">Python</a></li>
+        <li><a href="#">jQuery</a></li>
+        <li><a href="#">SQL</a></li>
+        <li><a href="#">Bootstrap</a></li>
+        <li><a href="#">Node.js</a></li>
+    </ul>
+    <script>
+        function myFunction() {
+            // Declare variables
+            var input, filter, ul, li, a, i;
+            input = document.getElementById("mySearch");
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("myMenu");
+            li = ul.getElementsByTagName("li");
+
+            // Loop through all list items, and hide those who don't match the search query
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+    <div style="margin-left:25%;padding:1px 16px;height:1000px;">
+        <h2>Fixed Full-height Side Nav</h2>
+        <h3>Try to scroll this area, and see how the sidenav sticks to the page</h3>
+        <p>Notice that this div element has a left margin of 25%. This is because the side navigation is set to 25% width. If you remove the margin, the sidenav will overlay/sit on top of this div.</p>
+        <p>Also notice that we have set overflow:auto to sidenav. This will add a scrollbar when the sidenav is too long (for example if it has over 50 links inside of it).</p>
+        <p>Mohamed Ashraf..</p>
+        <p>Some text..</p>
+        <p>Some text..</p>
+        <p>Some text..</p>
+        <p>Some text..</p>
+        <p>Some text..</p>
+        <p>Some text..</p>
+    </div>
+
+</body>
+</html>
+
+
